@@ -39,7 +39,7 @@ class ExpendituresController < ApplicationController
 private
 
 	def expenditure_params
-		params.require(:expenditure).permit(:name, :price, :user_id)
+		params.require(:expenditure).permit(:name, :price, :image)
 	end
 
 end

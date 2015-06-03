@@ -1,6 +1,7 @@
 <br>
 <%= @expenditure.name %><br>
 <%= @expenditure.price %><br>
+<%= image_tag @expenditure.image.url(:thumb) %>
 
 
 <%= link_to 'Back to All Expenditures', expenditures_path %>
