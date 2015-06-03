@@ -1,24 +1,24 @@
 <h1>Add a new expenditure below:</h1>
 
-<%= form_for @expenditure, :html => { :multipart => true } do |form| %>
+<%= simple_form_for @expenditure, :html => { :multipart => true } do |form| %>
 
 	<p>
-		<%= form.label :name %><br>
-		<%= form.text_field :name %>
+		<%= form.input :name, label: "Enter the name here:" %>
 	</p>
 
 	<p>
-		<%= form.label :price %><br>
-		<%= form.text_field :price %><br>
+		<%= form.input :price, label: "Enter the price here:" %>
 	</p>
 
 	<p>
-		<%= form.file_field :image %>
+		<%= form.input :image, label: "Attach a photo:" %>
 	</p>
 
 
 	<p>
-		<%= form.submit %>
+		<%= form.button :submit %>
 	</p>
 
 <% end %>
+
+<strong>Otherwise, access the home page <%= link_to 'here', expenditures_path %></strong>
