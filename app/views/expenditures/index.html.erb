@@ -1,0 +1,19 @@
+<br><br>
+<div align='center'>
+
+<h1>Welcome to BruBudget!</h1>
+
+<p>Click <%= link_to 'here', new_expenditure_path %> to create a new expenditure </p><br>
+
+</div>
+
+<strong>Here are your current expenditures:</strong>
+
+<% @expenditures.each do |ex| %>
+	<p><%= ex.name %></p>
+	<p><%= ex.price %></p>
+<% end %>
+
+
+
+</div>
