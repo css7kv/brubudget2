@@ -1,28 +1,26 @@
-== README
+==BRUBUDGET
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+==MVP
 
-Things you may want to cover:
+*Your app will have two models: User and Expenditure, where a user will have many expenditures. Remember that part of the Devise installation process involves creating a User model, and you will need to add the association afterwards!
 
-* Ruby version
+*Think about what attributes you need for expenditures: you will at least want to keep track of the name of the thing you bought and the price. What other info might be important?
 
-* System dependencies
+*The gems you will be required to use are Devise, Omniauth, and Paperclip. Use Devise and Omniauth to implement user authentication into your app. Use Paperclip to upload an image of the object purchased.
 
-* Configuration
+*You will want to at minimum include views for logging in, creating/editing a new expenditure, showing a single expenditure, and displaying all of a user's expenditures. Your app will need the above functionality, as well as the ability to delete an expenditure.
 
-* Database creation
+==Resources
 
-* Database initialization
+*Devise Tutorial
+*Omniauth Tutorial
+*Simple_form Docs
+*Paperclip Docs
+*Twitter Bootstrap Gem
 
-* How to run the test suite
+==Bonuses
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+*Use the Simple Form gem to handle all forms in your app.
+*Make it look nice! Use Bootstrap (for easy styling) and make your app responsive (mobile friendly).
+*Super super tricky: Use Chartkick to create a bar graph that will display a single user's expenditures by day on that user's show page. Use Chartkick to display your expenditure data in more ways (see Mint for inspiration).
+*Use your imagination to think of and implement features that you would want in a budgeting app :)
